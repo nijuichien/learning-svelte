@@ -19,7 +19,7 @@ const config = {
 			// strict: false
 		}),
 		paths: {
-			base: '' // 替换为仓库名
+			base: process.env.NODE_ENV === 'production' ? '/learning-svelte' : '' // 替换为仓库名
 		}
 	}
 };
